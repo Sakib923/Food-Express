@@ -11,13 +11,20 @@
     position: relative;
 }
 
-.food-item-img-container .add{
+.add{
     width: 35px;
     position: absolute;
     bottom: 15px;
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.food-item-img-container:hover .add {
+    opacity: 100%;
+    transition: 0.3s;
 }
 
 .food-item-counter{
@@ -30,6 +37,10 @@
     padding: 6px;
     border-radius: 50px;
     background-color: white;
+}
+
+.food-item-counter img{
+    width: 30px;
 }
 
 .food-item-image{
