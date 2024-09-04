@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import './Navbar.css';
 import { assets } from "../../assets/assets";
 
 export default function Navbar(){
 
     const [menu, setMenu] = useState("home");
-
-    useEffect(() => {
-        console.log(menu);
-    }, [])
 
     return(
         <div className="navbar">
@@ -20,7 +16,7 @@ export default function Navbar(){
                 <li onClick={() => {setMenu("contact-us")}} className={menu === "contact-us" ? "active" : ""}>Contact Us</li>
             </ul>
             <div className="navbar-right">
-                <img src={assets.search_icon} alt="search icon"/>
+                <img className="search" src={assets.search_icon} alt="search icon"/>
                 <div className="navbar-search-icon">
                     <img src={assets.basket_icon} alt="" />
                     <div className="dot"></div>

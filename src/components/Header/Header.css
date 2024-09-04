@@ -4,6 +4,7 @@
     background: url('./header_img.png') no-repeat;
     background-size: contain;
     position: relative;
+    filter: drop-shadow(0 0 0.75rem tomato);
 }
 
 .header-contents{
